@@ -1,0 +1,19 @@
+initialDelay.in.milliseconds: 1000
+fixedRate.in.milliseconds: 30000
+application.topic.name: ducks
+
+---
+spring:
+  kafka:
+    bootstrap-servers: pkc-41wq6.eu-west-2.aws.confluent.cloud:9092
+    properties:
+      security.protocol: SASL_SSL
+      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username='XXX' password='XXX';
+      sasl.mechanism: PLAIN
+      schema.registry.url: https://psrc-8qmnr.eu-west-2.aws.confluent.cloud
+      basic.auth.credentials.source: USER_INFO
+      basic.auth.user.info: "XXX:XXX"
+    producer:
+      client-id: confluent-cloud-avro-producer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer

@@ -1,0 +1,14 @@
+initialDelay.in.milliseconds: 1000
+fixedRate.in.milliseconds: 30000
+application.topic.name: ducks
+
+---
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    properties:
+      schema.registry.url: http://localhost:8081
+    producer:
+      client-id: local-plaintext-avro-producer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
