@@ -131,7 +131,7 @@
                     <!-- <userInfoConfig>XXX:XXX</userInfoConfig>-->
                     <outputDirectory>src/main/avro</outputDirectory>
                     <subjectPatterns>
-                        <param>^ducks-(key|value)$</param>
+                        <param>^ratings-(key|value)$</param>
                     </subjectPatterns>
                 </configuration>
             </plugin>

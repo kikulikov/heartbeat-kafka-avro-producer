@@ -1,6 +1,6 @@
 initialDelay.in.milliseconds: 1000
 fixedRate.in.milliseconds: 30000
-application.topic.name: ducks
+application.topic.name: ratings
 
 ---
 spring:

@@ -2,6 +2,10 @@
 
 ## Prerequisites
 
+INSERT INTO ratings (title, release_year, rating, timestamp) VALUES ('Sleeping Beauty', 2021, 9.0, '2024-09-24 05:00:00');
+INSERT INTO ratings (title, release_year, rating, timestamp) VALUES ('Oppenheimer', 2023, 9.9, '2024-09-24 05:00:00');
+INSERT INTO ratings (title, release_year, rating, timestamp) VALUES ('DUMMY6', 2023, 9.9, '2024-09-24 05:00:00');
+
 ### Java
 
 The project is based on Java Development Kit (JDK) version 17. 
